@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,135 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Maze" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muE-JU-JHJ">
+                                <rect key="frame" x="0.0" y="7.5" width="320" height="465"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YFG-h8-gmO" customClass="MazeView" customModule="Maze" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="155" width="300" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="YFG-h8-gmO" secondAttribute="height" multiplier="1:1" id="rGr-WK-epL"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Lucky get his bone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84T-by-Sd7">
+                                        <rect key="frame" x="26" y="6" width="268" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failures:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzV-H4-NMp">
+                                        <rect key="frame" x="10" y="43" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hh0-x7-N3H">
+                                        <rect key="frame" x="135" y="85" width="50" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-Fj-rGs">
+                                                <rect key="frame" x="2" y="14.5" width="46" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="DrK-a7-gwo"/>
+                                                    <constraint firstAttribute="width" constant="46" id="FfC-wz-I47"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="2TK-3h-Y7t"/>
+                                            <constraint firstItem="bWd-Fj-rGs" firstAttribute="centerX" secondItem="Hh0-x7-N3H" secondAttribute="centerX" id="3cK-Fg-cAX"/>
+                                            <constraint firstItem="bWd-Fj-rGs" firstAttribute="centerY" secondItem="Hh0-x7-N3H" secondAttribute="centerY" id="SIO-A0-l9A"/>
+                                            <constraint firstAttribute="width" secondItem="Hh0-x7-N3H" secondAttribute="height" multiplier="1:1" id="enz-Bk-gui"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfX-BF-bxc">
+                                        <rect key="frame" x="145" y="95" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="RkJ-Ip-5D2"/>
+                                            <constraint firstAttribute="width" secondItem="EfX-BF-bxc" secondAttribute="height" multiplier="1:1" id="wJw-v8-nUM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="retry"/>
+                                        <connections>
+                                            <action selector="retryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1u4-Zp-HLv"/>
+                                        </connections>
+                                    </button>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbA-tv-C57">
+                                        <rect key="frame" x="10" y="155" width="300" height="300"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Z3Y-P3-883">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl7-XB-jK4">
+                                                    <rect key="frame" x="8" y="135.5" width="284" height="29"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rl7-XB-jK4" firstAttribute="centerX" secondItem="Z3Y-P3-883" secondAttribute="centerX" id="GYe-yA-2yt"/>
+                                                <constraint firstItem="rl7-XB-jK4" firstAttribute="centerY" secondItem="Z3Y-P3-883" secondAttribute="centerY" id="KiS-9j-mVO"/>
+                                                <constraint firstAttribute="trailing" secondItem="rl7-XB-jK4" secondAttribute="trailing" constant="8" id="fY8-dd-0Pa"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="84T-by-Sd7" firstAttribute="centerX" secondItem="muE-JU-JHJ" secondAttribute="centerX" id="5fS-HC-szF"/>
+                                    <constraint firstItem="YFG-h8-gmO" firstAttribute="leading" secondItem="muE-JU-JHJ" secondAttribute="leading" constant="10" id="GnS-Zt-CfN"/>
+                                    <constraint firstItem="Hh0-x7-N3H" firstAttribute="centerX" secondItem="muE-JU-JHJ" secondAttribute="centerX" id="SE6-Q3-Y09"/>
+                                    <constraint firstItem="fbA-tv-C57" firstAttribute="bottom" secondItem="YFG-h8-gmO" secondAttribute="bottom" id="TdG-dr-PHP"/>
+                                    <constraint firstItem="PzV-H4-NMp" firstAttribute="leading" secondItem="YFG-h8-gmO" secondAttribute="leading" id="ZdV-ED-mYu"/>
+                                    <constraint firstItem="84T-by-Sd7" firstAttribute="top" secondItem="muE-JU-JHJ" secondAttribute="top" constant="6" id="asH-sJ-sNB"/>
+                                    <constraint firstItem="EfX-BF-bxc" firstAttribute="centerX" secondItem="Hh0-x7-N3H" secondAttribute="centerX" id="cmq-rB-pZX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="fM6-h7-0cu"/>
+                                    <constraint firstItem="fbA-tv-C57" firstAttribute="leading" secondItem="YFG-h8-gmO" secondAttribute="leading" id="gRc-uG-Mei"/>
+                                    <constraint firstAttribute="trailing" secondItem="YFG-h8-gmO" secondAttribute="trailing" constant="10" id="hH0-Br-hiV"/>
+                                    <constraint firstItem="PzV-H4-NMp" firstAttribute="top" secondItem="84T-by-Sd7" secondAttribute="bottom" constant="8" id="jq8-xB-R3w"/>
+                                    <constraint firstAttribute="bottom" secondItem="YFG-h8-gmO" secondAttribute="bottom" constant="10" id="l9I-gx-CLw"/>
+                                    <constraint firstItem="YFG-h8-gmO" firstAttribute="top" secondItem="Hh0-x7-N3H" secondAttribute="bottom" constant="20" id="lD3-jN-aIx"/>
+                                    <constraint firstItem="fbA-tv-C57" firstAttribute="trailing" secondItem="YFG-h8-gmO" secondAttribute="trailing" id="nnT-gl-xzd"/>
+                                    <constraint firstItem="fbA-tv-C57" firstAttribute="top" secondItem="YFG-h8-gmO" secondAttribute="top" id="nvD-4G-L6I"/>
+                                    <constraint firstItem="YFG-h8-gmO" firstAttribute="top" secondItem="84T-by-Sd7" secondAttribute="bottom" constant="120" id="pcN-S3-bbA"/>
+                                    <constraint firstItem="EfX-BF-bxc" firstAttribute="centerY" secondItem="Hh0-x7-N3H" secondAttribute="centerY" id="vIX-qg-sY6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="muE-JU-JHJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hdk-Gb-m5q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="muE-JU-JHJ" secondAttribute="trailing" id="lPj-f4-JYg"/>
+                            <constraint firstItem="muE-JU-JHJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mlS-Mt-XFN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blurView" destination="fbA-tv-C57" id="7Td-gT-XYw"/>
+                        <outlet property="containerView" destination="muE-JU-JHJ" id="Ev3-p5-ZQt"/>
+                        <outlet property="failureLabel" destination="PzV-H4-NMp" id="gJ6-AY-YPS"/>
+                        <outlet property="mazeView" destination="YFG-h8-gmO" id="h3j-HN-HqW"/>
+                        <outlet property="retryButton" destination="EfX-BF-bxc" id="NKS-YF-acp"/>
+                        <outlet property="timerLabel" destination="bWd-Fj-rGs" id="I8r-H7-FZZ"/>
+                        <outlet property="timerView" destination="Hh0-x7-N3H" id="JoI-jd-4ff"/>
+                        <outlet property="titleLabel" destination="84T-by-Sd7" id="wY3-In-KbA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.75" y="110"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="retry" width="346" height="346"/>
+    </resources>
 </document>

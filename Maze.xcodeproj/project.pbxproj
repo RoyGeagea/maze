@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A44E031124BFAA5D00F565BD /* ta_da.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A44E030F24BFAA5D00F565BD /* ta_da.mp3 */; };
+		A44E031224BFAA5D00F565BD /* short_triumphal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A44E031024BFAA5D00F565BD /* short_triumphal.mp3 */; };
+		A44E031424BFB33C00F565BD /* woof.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A44E031324BFB33B00F565BD /* woof.mp3 */; };
+		A44E031624BFB4C700F565BD /* dog_breathing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A44E031524BFB4C700F565BD /* dog_breathing.mp3 */; };
+		A4755B9A24BE16AD0048EFB9 /* MazeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4755B9924BE16AD0048EFB9 /* MazeView.swift */; };
+		A4755B9C24BE16BA0048EFB9 /* MazeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4755B9B24BE16BA0048EFB9 /* MazeView.xib */; };
+		A48CB95924BDEC1700DB5BA4 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48CB95824BDEC1700DB5BA4 /* Stack.swift */; };
+		A48CB95B24BDEC4200DB5BA4 /* MazeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48CB95A24BDEC4200DB5BA4 /* MazeGenerator.swift */; };
 		A4F1182F24BDBED8001F3167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1182E24BDBED8001F3167 /* AppDelegate.swift */; };
-		A4F1183124BDBED8001F3167 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1183024BDBED8001F3167 /* SceneDelegate.swift */; };
 		A4F1183324BDBED8001F3167 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1183224BDBED8001F3167 /* ViewController.swift */; };
 		A4F1183624BDBED8001F3167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4F1183424BDBED8001F3167 /* Main.storyboard */; };
 		A4F1183824BDBEDB001F3167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F1183724BDBEDB001F3167 /* Assets.xcassets */; };
@@ -16,9 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A44E030F24BFAA5D00F565BD /* ta_da.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ta_da.mp3; sourceTree = "<group>"; };
+		A44E031024BFAA5D00F565BD /* short_triumphal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = short_triumphal.mp3; sourceTree = "<group>"; };
+		A44E031324BFB33B00F565BD /* woof.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = woof.mp3; sourceTree = "<group>"; };
+		A44E031524BFB4C700F565BD /* dog_breathing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog_breathing.mp3; sourceTree = "<group>"; };
+		A4755B9924BE16AD0048EFB9 /* MazeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeView.swift; sourceTree = "<group>"; };
+		A4755B9B24BE16BA0048EFB9 /* MazeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MazeView.xib; sourceTree = "<group>"; };
+		A48CB95824BDEC1700DB5BA4 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		A48CB95A24BDEC4200DB5BA4 /* MazeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeGenerator.swift; sourceTree = "<group>"; };
 		A4F1182B24BDBED8001F3167 /* Maze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F1182E24BDBED8001F3167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4F1183024BDBED8001F3167 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A4F1183224BDBED8001F3167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4F1183524BDBED8001F3167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4F1183724BDBEDB001F3167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A48CB95E24BDF13500DB5BA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A48CB95824BDEC1700DB5BA4 /* Stack.swift */,
+				A48CB95A24BDEC4200DB5BA4 /* MazeGenerator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A4F1182224BDBED8001F3167 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +80,18 @@
 			isa = PBXGroup;
 			children = (
 				A4F1182E24BDBED8001F3167 /* AppDelegate.swift */,
-				A4F1183024BDBED8001F3167 /* SceneDelegate.swift */,
-				A4F1183224BDBED8001F3167 /* ViewController.swift */,
+				A48CB95E24BDF13500DB5BA4 /* Models */,
 				A4F1183424BDBED8001F3167 /* Main.storyboard */,
+				A4F1183224BDBED8001F3167 /* ViewController.swift */,
+				A4755B9924BE16AD0048EFB9 /* MazeView.swift */,
+				A4755B9B24BE16BA0048EFB9 /* MazeView.xib */,
 				A4F1183724BDBEDB001F3167 /* Assets.xcassets */,
 				A4F1183924BDBEDB001F3167 /* LaunchScreen.storyboard */,
 				A4F1183C24BDBEDB001F3167 /* Info.plist */,
+				A44E031024BFAA5D00F565BD /* short_triumphal.mp3 */,
+				A44E030F24BFAA5D00F565BD /* ta_da.mp3 */,
+				A44E031324BFB33B00F565BD /* woof.mp3 */,
+				A44E031524BFB4C700F565BD /* dog_breathing.mp3 */,
 			);
 			path = Maze;
 			sourceTree = "<group>";
@@ -94,7 +123,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Roy Geagea";
 				TargetAttributes = {
 					A4F1182A24BDBED8001F3167 = {
@@ -125,9 +154,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44E031424BFB33C00F565BD /* woof.mp3 in Resources */,
+				A44E031224BFAA5D00F565BD /* short_triumphal.mp3 in Resources */,
 				A4F1183B24BDBEDB001F3167 /* LaunchScreen.storyboard in Resources */,
+				A4755B9C24BE16BA0048EFB9 /* MazeView.xib in Resources */,
 				A4F1183824BDBEDB001F3167 /* Assets.xcassets in Resources */,
+				A44E031124BFAA5D00F565BD /* ta_da.mp3 in Resources */,
 				A4F1183624BDBED8001F3167 /* Main.storyboard in Resources */,
+				A44E031624BFB4C700F565BD /* dog_breathing.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48CB95B24BDEC4200DB5BA4 /* MazeGenerator.swift in Sources */,
 				A4F1183324BDBED8001F3167 /* ViewController.swift in Sources */,
 				A4F1182F24BDBED8001F3167 /* AppDelegate.swift in Sources */,
-				A4F1183124BDBED8001F3167 /* SceneDelegate.swift in Sources */,
+				A4755B9A24BE16AD0048EFB9 /* MazeView.swift in Sources */,
+				A48CB95924BDEC1700DB5BA4 /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +228,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +289,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -284,15 +322,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development: Antoine Iskandar (8NTT8M6PR3)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 542GN2GUUD;
 				INFOPLIST_FILE = Maze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kodmus.maze.Maze;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazegames.maze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = mazedevcert;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +345,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Distribution: KODMUS (542GN2GUUD)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 542GN2GUUD;
 				INFOPLIST_FILE = Maze/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kodmus.maze.Maze;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mazegames.maze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = mazediscert;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
